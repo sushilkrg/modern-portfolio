@@ -57,7 +57,7 @@ export default function HeroSection() {
         className="relative z-10 flex max-w-4xl flex-col items-start gap-4 text-balance text-left"
       >
         <h1 className="text-4xl font-bold text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 bg-clip-text leading-tight sm:text-5xl md:text-6xl lg:text-7xl">
-          <span className="text-4xl sm:text-5xl">Hii, 👋</span><br />I'm Sushil Kumar
+          <span className="text-4xl sm:text-5xl">Hi, 👋</span><br />I&apos;m Sushil Kumar
         </h1>
         <p className="text-xl text-neutral-300 sm:text-2xl md:text-3xl">
           Full-Stack Software Developer
