@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { ExternalLink, Github } from 'lucide-react';
+import { motion } from 'framer-motion';
 
 type Project = {
   title: string;
@@ -82,15 +83,24 @@ const projects: Project[] = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-12 px-4 max-w-6xl mx-auto">
+    <section id="projects" className="py-16 px-4 md:px-28 container mx-auto">
+    {/* <section id="projects" className="py-12 px-4 max-w-6xl mx-auto"> */}
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {projects.map((project, index) => (
+          <motion.div
+          key={index}
+          className="bg-gray-100 dark:bg-[#1a1a1a]  shadow-md transition hover:shadow-lg"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: index * 0.1 }}
+        >
           <div
             key={index}
             className="group relative rounded-xl overflow-hidden border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900 hover:shadow-md transition-all duration-300"
           >
-            <div className="relative w-full h-56 md:h-64">
+            <div className="relative w-full h-56 md:h-68">
               <Image
                 src={project.image}
                 alt={project.title}
@@ -157,6 +167,7 @@ const Projects = () => {
               </div> */}
             </div>
           </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -128,11 +128,11 @@ const skillsData: SkillCategory[] = [
     skills: [
       'Node.js',
       'Django',
-      'Django REST Framework',
       'ExpressJS',
       'Prisma ORM',
       'REST api',
       'graphQL',
+      'Django REST Framework',
     ],
   },
   {
@@ -188,7 +188,7 @@ const skillColors: Record<string, string> = {
 export default function Skills() {
   return (
     <section id='skills' className="py-16 px-4 md:px-12 bg-white dark:bg-[#0e0e0e] transition">
-      <div className='py-8 px-4 max-w-6xl mx-auto'>
+      <div className='py-8 md:px-20 container mx-auto'>
 
       
       <motion.h2

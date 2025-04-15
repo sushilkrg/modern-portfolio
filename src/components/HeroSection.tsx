@@ -62,6 +62,10 @@ export default function HeroSection() {
         <p className="text-xl text-neutral-300 sm:text-2xl md:text-3xl">
           Full-Stack Software Developer
         </p>
+        <a  href="https://www.linkedin.com/in/sushilkumar01" target="_blank">
+
+        <button className="bg-green-500 cursor-pointer  text-black text-xl border border-none rounded-full px-4 py-2">Connect with me🚀</button>
+        </a>
       </motion.div>
     </div>
   );
