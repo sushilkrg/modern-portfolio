@@ -13,17 +13,17 @@ type BlogPost = {
 
 const blogPosts: BlogPost[] = [
   {
-    title: 'Mastering REST APIs with Django',
+    title: 'Mastering REST APIs with Django Rest Framework',
     description:
-      'Learn how to build scalable, secure, and efficient REST APIs using Django and Django REST Framework.  am enjoying a lot. I have worked on my bowling and fitness, feeling fresh and I am enjoying bowling. Even if the ball tails a bit (due to the use of saliva), it becomes easier to get wickets (especially bowled and lbw) dismissals. The wicket is on the slower side. Just tried to attack the stumps as much as I can.',
-    image: '/images/flatmates.png',
+      'Mastering REST APIs with Django REST Framework (DRF) empowers you to build robust, scalable, and secure backend systems. DRF simplifies API development with tools like serializers, viewsets, and routers. It supports powerful features such as authentication, permissions, and pagination out of the box. Ideal for both beginners and pros, DRF accelerates modern web and mobile app development.',
+    image: '/images/django-rest-image.png',
     link: 'https://medium.com/@yourusername/django-rest-api',
   },
   {
     title: 'Building Full-stack Apps with MERN',
     description:
-      'This article dives into creating robust full-stack apps with MongoDB, Express, React, and Node.js. am enjoying a lot. I have worked on my bowling and fitness, feeling fresh and I am enjoying bowling. Even if the ball tails a bit (due to the use of saliva), it becomes easier to get wickets (especially bowled and lbw) dismissals. The wicket is on the slower side. Just tried to attack the stumps as much as I can',
-    image: '/images/insighthub.png',
+      'Building full-stack apps with the MERN stack—MongoDB, Express.js, React, and Node.js—offers a seamless JavaScript development experience from frontend to backend. MongoDB handles flexible data storage, Express and Node power the backend, and React builds dynamic user interfaces. This stack enables rapid, scalable app development and is ideal for creating modern web applications with efficient performance and responsiveness.',
+    image: '/images/MERN-image.png',
     link: 'https://medium.com/@yourusername/mern-stack-guide',
   },
 ];

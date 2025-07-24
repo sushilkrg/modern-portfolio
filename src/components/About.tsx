@@ -32,10 +32,14 @@
 
 import React from "react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 function About() {
   return (
-    <section id="about" className="relative min-h-auto text-center py-12 md:py-30">
+    <section
+      id="about"
+      className="relative min-h-auto text-center py-12 md:py-30"
+    >
       <h1 className="text-2xl md:text-5xl font-bold pb-12">About Me</h1>
       <div className="relative flex flex-col-reverse md:flex-row items-center justify-center container mx-auto md:mx-auto py-10">
         {/* Text Section */}
@@ -47,14 +51,10 @@ function About() {
         >
           <div>
             <p className="my-2 px-4 text-xl text-left">
-              MCA Student & Passionate Software Developer with a strong focus on
-              building real-world applications, solving 300+ DSA problems, and
-              developing innovative full-stack solutions.
+              A results-driven developer with a robust understanding of data structures, algorithms, and full-stack development. Proven track record of solving 300+ DSA problems and building efficient, real-world software solutions.
             </p>
             <p className="my-2 px-4 text-xl text-left">
-              I possess strong interpersonal and communication skills with a
-              growth mindset, always eager to learn, collaborate, and make a
-              meaningful impact through technology.
+              Embraces a growth mindset and thrives in collaborative environments. Dedicated to delivering robust, impactful software through effective communication and technical excellence.
             </p>
           </div>
         </motion.div>
@@ -66,10 +66,12 @@ function About() {
           transition={{ duration: 0.6 }}
           className="flex-1 mb-8 md:mb-0 md:max-w-[30%] md:ml-8"
         >
-          <img
-            src="/images/my-img.jpg" // Replace with your image path
+          <Image
+            src="/images/my-img.jpg"
             alt="About me"
             className=" shadow-lg w-48 h-48 lg:w-80 lg:h-80 rounded-full overflow-hidden border-4 border-primary/20  object-cover"
+            width={800}
+            height={800}
           />
         </motion.div>
       </div>

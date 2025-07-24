@@ -1,16 +1,14 @@
-'use client';
+"use client";
 
-import React from 'react';
-import {
-  Linkedin,
-  Instagram,
-  Twitter,
-  Mail,
-} from 'lucide-react';
+import React from "react";
+import { Linkedin, Instagram, Twitter, Mail } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-12 px-4 sm:px-6 md:px-16 max-w-4xl mx-auto">
+    <section
+      id="contact"
+      className="py-12 px-4 sm:px-6 md:px-16 max-w-4xl mx-auto"
+    >
       <h1 className="text-3xl font-bold text-center mb-6">Contact Us</h1>
 
       <div className="flex flex-wrap items-center justify-center gap-6">
@@ -38,7 +36,7 @@ const Contact = () => {
 
         {/* Twitter */}
         <a
-          href="https://twitter.com/sushil_kr"
+          href="https://x.com/sushil_krg"
           target="_blank"
           rel="noopener noreferrer"
           className="flex flex-col items-center text-zinc-700 dark:text-zinc-300 hover:text-sky-500 transition"
