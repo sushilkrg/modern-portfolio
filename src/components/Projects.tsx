@@ -33,6 +33,23 @@ const projects: Project[] = [
     ],
   },
   {
+    title: "Flickbox",
+    description:
+      "Flickbox is the video sharing and storage app for short videos.",
+    image: "/images/flickbox-ui.png",
+    liveLink: "https://flickbox.vercel.app",
+    githubLink: "https://github.com/sushilkrg/flickbox",
+    skills: [
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "Imagekit",
+      "Tailwind-CSS",
+      "Github",
+      "Vercel",
+    ],
+  },
+  {
     title: "Payyou",
     description:
       "PayYou is a full-stack digital wallet app that lets users securely add money, send funds, and track transactions. It features a user-friendly dashboard to manage wallet balance, view recent activity, and monitor weekly transactions — all in one place.",
