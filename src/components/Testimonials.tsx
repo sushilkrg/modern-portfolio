@@ -2,13 +2,17 @@
 
 import React from "react";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { ChipIcon } from "@heroicons/react/solid";
 
 export default function Testimonials() {
   return (
     <section className="h-[40rem] bg-white dark:bg-black py-12 px-4 w-full mx-auto">
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Testimonials
-      </h2>
+      <div className="text-center mb-20">
+        <ChipIcon className="w-10 inline-block mb-4" />
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center text-gray-900 dark:text-white">
+          Testimonials
+        </h1>
+      </div>
       <div className="rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}

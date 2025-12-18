@@ -4,6 +4,7 @@ import React from "react";
 import Image from "next/image";
 import { ExternalLink, Github } from "lucide-react";
 import { motion } from "framer-motion";
+import { ChipIcon } from "@heroicons/react/solid";
 
 type Project = {
   title: string;
@@ -18,41 +19,28 @@ const projects: Project[] = [
   {
     title: "Flatmates",
     description:
-      "Flatmates is a platform designed to simplify your roommate search by matching preferences and helping you post, explore, and save trusted listings. Easily connect with like-minded individuals and find the perfect shared living space in your city.",
-    image: "/images/flatmates.png",
-    liveLink: "https://flatmates-psi.vercel.app",
-    githubLink: "https://github.com/sushilkrg/flatmates-frontend",
-    skills: [
-      "React",
-      "Node.js",
-      "MongoDB",
-      "Redux Toolkit",
-      "Tailwind-CSS",
-      "Render",
-      "Vercel",
-    ],
-  },
-  {
-    title: "Flickbox",
-    description:
-      "Flickbox is the video sharing and storage app for short videos.",
-    image: "/images/flickbox-ui.png",
-    liveLink: "https://flickbox.vercel.app",
-    githubLink: "https://github.com/sushilkrg/flickbox",
+      "Flatmates is a platform designed to simplify your flatmate/roommate search by matching preferences and helping you add, explore, and bookmark trusted listings. Easily connect with like-minded individuals and find the perfect shared living space in your city.",
+    image: "/images/flatmates-landingpage.png",
+    liveLink: "https://flatmatess.vercel.app/",
+    githubLink: "https://github.com/sushilkrg/flatmates",
     skills: [
       "Next.js",
+      "React",
       "Node.js",
+      "Express.js",
       "MongoDB",
-      "Imagekit",
+      "Redux Toolkit",
+      "TypeScript",
       "Tailwind-CSS",
-      "Github",
+      "Stripe payment gateway integration",
+      "Render",
       "Vercel",
     ],
   },
   {
     title: "Payyou",
     description:
-      "PayYou is a full-stack digital wallet app that lets users securely add money, send funds, and track transactions. It features a user-friendly dashboard to manage wallet balance, view recent activity, and monitor weekly transactions — all in one place.",
+      "PayYou is a modern digital wallet app that lets users securely add money, send funds, and track transactions. It features a user-friendly dashboard to manage wallet balance, view recent activity, and monitor weekly transactions — all in one place.",
     image: "/images/payyou.png",
     liveLink: "https://payyou.vercel.app",
     githubLink: "https://github.com/sushilkrg/payyou",
@@ -63,7 +51,12 @@ const projects: Project[] = [
       "Redux Toolkit",
       "Tailwind-CSS",
       "REST APIs",
+      "Webhooks",
+      "Stripe payment gateway integration",
       "MongoDB",
+      "ACID Properties",
+      "Render",
+      "Vercel",
     ],
   },
   {
@@ -81,6 +74,23 @@ const projects: Project[] = [
       "Resend Email",
       "ShadCN",
       "Typescript",
+    ],
+  },
+  {
+    title: "Flickbox",
+    description:
+      "Flickbox is a short-video sharing and storage platform which allows users to upload and manage videos.",
+    image: "/images/flickbox-landingpage.png",
+    liveLink: "https://flickbox.vercel.app",
+    githubLink: "https://github.com/sushilkrg/flickbox",
+    skills: [
+      "Next.js",
+      "Node.js",
+      "MongoDB",
+      "Imagekit SDK",
+      "Tailwind-CSS",
+      "Github",
+      "Vercel",
     ],
   },
   {
@@ -142,9 +152,12 @@ const Projects = () => {
   return (
     <section id="projects" className="py-16 px-4 md:px-28 container mx-auto">
       {/* <section id="projects" className="py-12 px-4 max-w-6xl mx-auto"> */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-        Projects
-      </h2>
+      <div className="text-center mb-20">
+        <ChipIcon className="w-10 inline-block mb-4" />
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center text-gray-900 dark:text-white">
+          Projects
+        </h1>
+      </div>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
         {projects.map((project, index) => (
           <motion.div

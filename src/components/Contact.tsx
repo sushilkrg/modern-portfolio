@@ -2,6 +2,7 @@
 
 import React from "react";
 import { Linkedin, Instagram, Twitter, Mail } from "lucide-react";
+import { ChipIcon } from "@heroicons/react/solid";
 
 const Contact = () => {
   return (
@@ -9,7 +10,12 @@ const Contact = () => {
       id="contact"
       className="py-12 px-4 sm:px-6 md:px-16 max-w-4xl mx-auto"
     >
-      <h1 className="text-3xl font-bold text-center mb-6">Contact Us</h1>
+      <div className="text-center mb-20">
+        <ChipIcon className="w-10 inline-block mb-4" />
+        <h1 className="text-3xl md:text-5xl font-bold mb-4 text-center text-gray-900 dark:text-white">
+          Contact Me
+        </h1>
+      </div>
 
       <div className="flex flex-wrap items-center justify-center gap-6">
         {/* LinkedIn */}
@@ -47,7 +53,7 @@ const Contact = () => {
 
         {/* Gmail */}
         <a
-          href="mailto:skpersonal100@gmail.com"
+          href="mailto:sushilkr8207@gmail.com"
           className="flex flex-col items-center text-zinc-700 dark:text-zinc-300 hover:text-red-500 transition"
         >
           <Mail className="w-8 h-8 mb-1" />

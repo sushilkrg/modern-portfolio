@@ -51,10 +51,10 @@ function About() {
         >
           <div>
             <p className="my-2 px-4 text-xl text-left">
-              A results-driven developer with a robust understanding of data structures, algorithms, and full-stack development. Proven track record of solving 300+ DSA problems and building efficient, real-world software solutions.
+              I am a result-driven full-stack developer with hands-on experience building scalable, production-ready web applications, focused on writing clean, efficient code and delivering reliable solutions to real-world problems.
             </p>
             <p className="my-2 px-4 text-xl text-left">
-              Embraces a growth mindset and thrives in collaborative environments. Dedicated to delivering robust, impactful software through effective communication and technical excellence.
+              I enjoy working across frontend, backend, and deployment, collaborating with teams in fast-paced environments while taking full ownership of my work. I embrace a growth mindset, continuously improve my skills, adapt to new technologies, and stay focused on delivering robust, impactful software through strong communication and technical excellence.
             </p>
           </div>
         </motion.div>
