@@ -40,7 +40,7 @@ const projects: Project[] = [
   {
     title: "Payyou",
     description:
-      "PayYou is a modern digital wallet app that lets users securely add money, send funds, and track transactions. It features a user-friendly dashboard to manage wallet balance, view recent activity, and monitor weekly transactions — all in one place.",
+      "PayYou is a modern fully secure digital wallet app that lets users securely add money, send funds, and track transactions. It features a user-friendly dashboard to manage wallet balance, manage and track their transactions — all in one place.",
     image: "/images/payyou.png",
     liveLink: "https://payyou.vercel.app",
     githubLink: "https://github.com/sushilkrg/payyou",
@@ -48,15 +48,17 @@ const projects: Project[] = [
       "React",
       "Node.js",
       "Expressjs",
+      "Typescript",
       "Redux Toolkit",
       "Tailwind-CSS",
       "REST APIs",
       "Webhooks",
-      "Stripe payment gateway integration",
-      "MongoDB",
-      "ACID Properties",
+      "Stripe payment gateway",
+      "PostgreSQL",
       "Render",
-      "Vercel",
+      "Docker",
+      "Redis",
+      "AI"
     ],
   },
   {
