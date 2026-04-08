@@ -37,6 +37,8 @@ const skills = [
   "REST APIs",
   "Stripe Payment Gateway Integration",
   "Webhooks Integration",
+  "Redis",
+  "OpenAI/Gemini AI Integration",
   "Vercel",
   "Render",
 ];
